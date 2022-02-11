@@ -129,12 +129,12 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/SHIZUKA_SUPPORT'),
+            InlineKeyboardButton('🥀 Oᴡɴᴇʀ', url='https://t.me/pratheek06')
         ],
         [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help_main'),
+            InlineKeyboardButton('❌ Cʟᴏsᴇ', callback_data='close'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -188,15 +188,15 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('🥀 Oᴡɴᴇʀ', url='https://t.me/PRATHEEK06'),
+            InlineKeyboardButton('👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/SHIZUKA_SUPPORT'),     
         ],
         [
-            InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton("📣 Uᴘᴅᴀᴛᴇs", url='https://t.me/Shizuka_updates'),
+            InlineKeyboardButton('❌ Cʟᴏsᴇ', callback_data='close'),
         ]
     ]
-    await message.reply("<b>The source code of this bot is public and can be found at <a href=https://github.com/subinps/VCPlayerBot>VCPlayerBot.</a>\nYou can deploy your own bot and use in your group.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply("The Owner Of This Bot Is Here And Can Be Found At <a href=https://t.me/pratheek06.</a>\nYou Can Ask His Help If U Have Have Any Questions.\n\nMᴀᴅᴇ Wɪᴛʜ ❤️ Bʏ Pʀᴀᴛʜᴇᴇᴋ .", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     await delete_messages([message])
 
 @Client.on_message(filters.command(['restart', 'update', f"restart@{Config.BOT_USERNAME}", f"update@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
